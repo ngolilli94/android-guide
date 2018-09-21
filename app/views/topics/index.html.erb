@@ -1,0 +1,22 @@
+<div id="topicsContainer">
+    <% @topics.each do |topic_info| %>
+
+    <div class="individualTopic">
+        <h2> <a href="/topics/<%= topic_info.id%>"> <%= topic_info.title %> </a></h2>
+
+        <%= image_tag topic_info.icon %>
+
+        <% if developer_signed_in? %>
+        <a href="/topics/<%= topic_info.id %>/edit"> Edit </a>
+
+        <%= link_to 'Delete', topic_path(topic_info), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+    </div>
+    <% end %>
+
+    <div class="add">
+        <% if developer_signed_in? %>
+            <a href="/topics/new"> Add </a> 
+        <% end %>
+    </div>
+</div>
