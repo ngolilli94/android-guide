@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   resources :topics
   resources :tutorials
+  resources :subjects, except: :index
 end
