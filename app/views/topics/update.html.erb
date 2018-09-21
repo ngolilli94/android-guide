@@ -1,0 +1,13 @@
+<%= form_with model: @topic, local: true do |form| %>
+    <div class="field"> 
+        <label> Topic: </label>
+        <%= form.text_field :title %> 
+    </div>
+    <div class="field"> 
+        <label> Icon Upload: </label>
+        <%= form.file_field :icon %> 
+    </div>
+    <div class="field"> 
+        <%= form.submit %> 
+    </div>
+<% end %>
