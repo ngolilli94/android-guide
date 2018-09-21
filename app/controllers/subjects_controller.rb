@@ -17,7 +17,7 @@ class SubjectsController < ApplicationController
     def create
         subject.create(subject_params)
 
-        redirect_to :controller => 'subjects', :action => 'index'
+        redirect_to :controller => 'subjects', :action => 'show'
     end
     
     def edit
@@ -35,7 +35,7 @@ class SubjectsController < ApplicationController
         @subject = Subject.find(params[:id])
         @subject.update(subject_params)
 
-        redirect_to :controller => 'subjects', :action => 'index'
+        redirect_to :controller => 'subjects', :action => 'show'
     end
 
     def destroy
