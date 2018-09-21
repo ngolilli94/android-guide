@@ -1,0 +1,6 @@
+<h2> Index </h2>
+<% @tutorials.order('title ASC').each do |tutorial| %>
+    <ul>
+        <li> <a href="/tutorials/<%= tutorial.id %>"> <%= tutorial.title %> </a> </li>
+    </ul>
+<% end %>
