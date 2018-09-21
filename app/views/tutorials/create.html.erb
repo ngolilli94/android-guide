@@ -1,4 +1,4 @@
-<%= form_with model: @topic, local: true do |form| %>
+<%= form_with model: @tutorial, local: true do |form| %>
     <div class="field"> 
         <label> Topic: </label>
         <%= form.select(:topic_id) do %>
@@ -21,7 +21,7 @@
     </div>
     <div class="field"> 
         <label> Image Upload: </label>
-        <%= form.text_field :figures, multiple: true %> 
+        <%= form.file_field :figures, multiple: true %> 
     </div>
     <div class="field"> 
         <%= form.submit %> 
