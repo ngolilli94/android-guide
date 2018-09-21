@@ -10,6 +10,12 @@ class TutorialsController < ApplicationController
     def new
         @tutorial = Tutorial.new
         @topics = Topic.all
+
+        if developer_signed_in?
+
+        else
+            redirect_to :controller => 'topics', :action => 'index'
+        end
     end
 
     def create
@@ -21,6 +27,12 @@ class TutorialsController < ApplicationController
     def edit
         @tutorial = Tutorial.find(params[:id])
         @topics = Topic.all
+
+        if developer_signed_in?
+
+        else
+            redirect_to :controller => 'topics', :action => 'index'
+        end
     end
 
     def update
