@@ -1,0 +1,21 @@
+#topicsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .individualTopic {
+        background-color: aliceblue;
+        width: 18vw;
+        height: 18vw;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5em;
+        border-radius: 15px;
+
+        img {
+            max-width: 10vw;
+        }
+    }
+}

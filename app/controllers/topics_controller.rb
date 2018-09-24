@@ -36,7 +36,7 @@ class TopicsController < ApplicationController
 
     def update
         @topic = Topic.find(params[:id])
-        @ttopic.update(topic_params)
+        @topic.update(topic_params)
 
         redirect_to :controller => 'topics', :action => 'index'
     end

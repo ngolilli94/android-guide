@@ -2,15 +2,19 @@
     <% @topics.each do |topic_info| %>
 
     <div class="individualTopic">
-        <h2> <a href="/topics/<%= topic_info.id%>"> <%= topic_info.title %> </a></h2>
+        <a href="/topics/<%= topic_info.id%>"> 
+            <h2> <%= topic_info.title %> </h2>
 
-        <%= image_tag topic_info.icon %>
+            <%= image_tag topic_info.icon %> 
+        </a>
 
         <% if developer_signed_in? %>
-        <a href="/topics/<%= topic_info.id %>/edit"> Edit </a>
+        <span> 
+            <a href="/topics/<%= topic_info.id %>/edit"> Edit </a> |
 
-        <%= link_to 'Delete', topic_path(topic_info), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %>
-        <% end %>
+            <%= link_to 'Delete', topic_path(topic_info), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %>
+            <% end %>
+        </span>
     </div>
     <% end %>
 
