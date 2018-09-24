@@ -1,10 +1,12 @@
-<h3> <%= @tutorial.definition %> </h3>
+<div id="individualTutorialContainer">
+    <h3> <%= @tutorial.definition %> </h3>
 
-<% if @subtopics.exists? %>
-    <% @subtopics.each do |subtopic| %>
-        <ul>
-            <li> <a href="/subjects/<%=subtopic.id%>"> <%= subtopic.title %> </li>
-        </ul>
+    <% if @subtopics.exists? %>
+        <% @subtopics.each do |subtopic| %>
+            <ul>
+                <li> <a href="/subjects/<%=subtopic.id%>"> <%= subtopic.title %> </li>
+            </ul>
+        <% end %>
     <% end %>
-<% end %>
+</div>
 
