@@ -1,9 +1,9 @@
-<%= form_with model: @tutorial, local: true do |form| %>
+<%= form_with model: @subject, local: true do |form| %>
     <div class="field"> 
-        <label> Topic: </label>
-        <%= form.select(:topic_id) do %>
-            <% @topics.order('id ASC').each do |topic_select| %>
-              <%= content_tag(:option, topic_select.title, value: topic_select.id) %>
+        <label> Tutorial: </label>
+        <%= form.select(:tutorial_id) do %>
+            <% @tutorials.order('id ASC').each do |tutorial_select| %>
+              <%= content_tag(:option, tutorial_select.title, value: tutorial_select.id) %>
             <% end %>
         <% end %> 
     </div>
@@ -14,10 +14,6 @@
     <div class="field"> 
         <label> Definition: </label>
         <%= form.text_area :definition %> 
-    </div>
-    <div class="field"> 
-        <label> Icon Upload: </label>
-        <%= form.file_field :icon %> 
     </div>
     <div class="field"> 
         <label> File Uploads: </label>

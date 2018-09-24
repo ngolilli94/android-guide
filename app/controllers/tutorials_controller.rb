@@ -5,6 +5,7 @@ class TutorialsController < ApplicationController
     
     def show
         @tutorial = Tutorial.find(params[:id])
+        @subtopics = @tutorial.subjects
     end
 
     def new
