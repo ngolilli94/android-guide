@@ -2,7 +2,7 @@
     <div class="field"> 
         <label> Tutorial: </label>
         <%= form.select(:tutorial_id) do %>
-            <% @tutorial.order('id ASC').each do |tutorial_select| %>
+            <% @tutorials.order('id ASC').each do |tutorial_select| %>
               <%= content_tag(:option, tutorial_select.title, value: tutorial_select.id) %>
             <% end %>
         <% end %> 
