@@ -12,7 +12,7 @@ class TopicsController < ApplicationController
         @topic = Topic.new
 
         if developer_signed_in?
-
+            render :action => "new"
         else
             redirect_to :controller => 'topics', :action => 'index'
         end
@@ -28,7 +28,7 @@ class TopicsController < ApplicationController
         @topic = Topic.find(params[:id])
 
         if developer_signed_in?
-
+            render :action => "edit"
         else
             redirect_to :controller => 'topics', :action => 'index'
         end

@@ -2,17 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 5%;
+    margin-top: 10%;
 
     .individualTopic {
-        background-color: aliceblue;
-        width: 18vw;
-        height: 18vw;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 1.5em;
+        background-color: #DFDFDF;
+        box-shadow: 8px -8px #bfbfbd;
         border-radius: 15px;
+        flex: 34%;
+        margin: 8%;
+        height: 30vw;
 
         img {
             max-width: 10vw;
