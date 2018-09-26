@@ -2,18 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DFDFDF;
+    background-color: #DFDFDFBF;
     flex-flow: column wrap;
-    margin: 5px;
+    margin: 5%;
+    border-radius: 10px;
+
+    img {
+        max-width: 75%;
+    }
 
     ul {
         width: 75%;
 
         li {
-            list-style: none;
             background-color: #DFDFDF;
             border: 2px dotted #9CB1AE;
-    
+            font-size: 6vw;
+            padding: 2vw;
+
             a {
                 text-decoration: none;
                 color: #8FC1BA;
