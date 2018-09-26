@@ -1,0 +1,13 @@
+#individualSubjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDFBF;
+    flex-flow: column wrap;
+    margin: 5%;
+    border-radius: 10px;
+
+    img {
+        max-width: 75%;
+    }
+}
