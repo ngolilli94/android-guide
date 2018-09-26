@@ -1,5 +1,10 @@
 <div id="individualSubjectContainer">
-    <h2> <%= @subject.title %> </h2>
+    <h1> <%= @subject.title %> </h1>
+    <% if @subject.figures.blank? == false %>
+        <% @subject.figures.each do |image| %>
+            <%= image_tag image %> <br/>
+        <% end %>
+    <% end %>
 
     <p> <%= @subject.definition %> </p>
 

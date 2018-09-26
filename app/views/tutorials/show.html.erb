@@ -2,7 +2,7 @@
     <h1> <%= @tutorial.title %> </h1>
     <% if @tutorial.figures.blank? == false %>
         <% @tutorial.figures.each do |image| %>
-            <%= image_tag image %>
+            <%= image_tag image %> <br/>
         <% end %>
     <% end %>
 
