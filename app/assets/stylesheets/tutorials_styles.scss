@@ -1,0 +1,24 @@
+#individualTutorialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+    flex-flow: column wrap;
+    margin: 5px;
+
+    ul {
+        width: 75%;
+
+        li {
+            list-style: none;
+            background-color: #DFDFDF;
+            border: 2px dotted #9CB1AE;
+    
+            a {
+                text-decoration: none;
+                color: #8FC1BA;
+                font-size: 6vw;
+            }
+        }
+    }
+}
