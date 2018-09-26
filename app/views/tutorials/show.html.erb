@@ -1,12 +1,19 @@
 <div id="individualTutorialContainer">
+    <h1> <%= @tutorial.title %> </h1>
+    <% if @tutorial.figures.blank? == false %>
+        <% @tutorial.figures.each do |image| %>
+            <%= image_tag image %>
+        <% end %>
+    <% end %>
+
     <h3> <%= @tutorial.definition %> </h3>
 
     <% if @subtopics.exists? %>
+        <ul>
         <% @subtopics.each do |subtopic| %>
-            <ul>
                 <li> <a href="/subjects/<%=subtopic.id%>"> <%= subtopic.title %> </li>
-            </ul>
         <% end %>
+        </ul>
     <% end %>
 
     <%= link_to 'Back', :back %>
