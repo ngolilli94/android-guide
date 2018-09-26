@@ -1,9 +1,11 @@
 <div id="individualTopicContainer">
     <h2> <%= @topic.title %> </h2>
 
+    <ul>
     <% @topic_tutorials.each do |tutorial| %>
-        <ul>
             <li> <a href="/tutorials/<%=tutorial.id %>"> <%= tutorial.title %> </a> </li>
-        </ul>
     <% end %>
+    </ul>
+
+    <%= link_to 'Back', :back %>
 </div>

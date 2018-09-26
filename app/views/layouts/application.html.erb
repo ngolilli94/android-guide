@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PassionProject</title>
+    <title>Android Guide</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,13 @@
   </head>
 
   <body>
+
+    <% if developer_signed_in? %>
+        <nav> 
+          <span> Signed in as <%= current_developer.email %> </span>
+          <span> <%= link_to "Sign Out", destroy_developer_session_path, :method => :delete %> <span>
+        </nav>
+    <% end %>
     <%= yield %>
   </body>
 </html>
