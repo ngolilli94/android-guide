@@ -28,3 +28,36 @@ form {
     }
 }
 
+#fixedMenu {
+    position: fixed;
+    background-color: #F7F9F9B3;
+    border-radius: 0 5px 5px 0;
+    padding-right: 8px;
+
+    #mainList li {
+        border: 1px dotted black;
+
+        a {
+            text-decoration: none;
+            color: #6DA8A0;
+        }
+    }
+
+    .nestedList li {
+        background-color: #DFDFDF80;
+        list-style: none;
+    }
+}
+
+.deviseContainer {
+    
+    h2, h3, p {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #9bded4;
+    }
+    
+}
