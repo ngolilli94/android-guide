@@ -12,6 +12,8 @@ nav {
 form {
     display: table;
     background-color: #DFDFDFBF;
+    margin: auto;
+    padding: 5px;
 
     .field {
         display: table-row;
@@ -25,3 +27,4 @@ form {
         }
     }
 }
+
