@@ -16,6 +16,18 @@
           <span> Signed in as <%= current_developer.email %> </span>
           <span> <%= link_to "Sign Out", destroy_developer_session_path, :method => :delete %> <span>
         </nav>
+
+        <div id="fixedMenu">
+          <ul id="mainList">
+            <li> New: </li>
+              <ul id="nestedList">
+                <li> <a href="/topics/new"> Topic </a> </li>
+                <li> <a href="/tutorials/new"> Tutorial </a> </li>
+                <li> <a href="/subjects/new"> Subject </a> </li>
+              </ul>
+            <li> <a href="/developers/edit"> Account Settings </a> </li>
+          </ul>
+        </div>
     <% end %>
     <%= yield %>
   </body>
