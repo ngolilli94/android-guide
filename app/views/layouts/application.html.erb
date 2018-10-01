@@ -13,11 +13,13 @@
 
     <% if developer_signed_in? %>
         <nav> 
+          <span> Developer Mode </span>
           <span> Signed in as <%= current_developer.email %> </span>
           <span> <%= link_to "Sign Out", destroy_developer_session_path, :method => :delete %> <span>
         </nav>
 
         <div id="fixedMenu">
+        <h3> Dashboard </h3>
           <ul id="mainList">
             <li> Go to: </li>
               <ul class="nestedList">
