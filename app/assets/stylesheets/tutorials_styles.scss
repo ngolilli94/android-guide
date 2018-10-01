@@ -25,11 +25,18 @@
                 color: #8FC1BA;
                 font-size: 6vw;
             }
-        }
 
-        span a {
-            font-size: 2vw;
-            text-align: right;
+            span {
+                font-size: 1.5vw;
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    font-size: 1.5vw;
+                    color: #4080AA;
+                    text-align: right;
+                }
+            }
         }
     }
 }

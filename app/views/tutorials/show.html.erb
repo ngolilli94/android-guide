@@ -11,7 +11,16 @@
     <% if @subtopics.exists? %>
         <ul>
         <% @subtopics.each do |subtopic| %>
-                <li> <a href="/subjects/<%=subtopic.id%>"> <%= subtopic.title %> </li>
+                <li> <a href="/subjects/<%=subtopic.id%>"> <%= subtopic.title %> </a> <br/>
+
+                <% if developer_signed_in? %>
+                <span>
+                    (<a href="/subjects/<%= subtopic.id %>/edit"> Edit </a> |
+                    <%= link_to 'Delete', subject_path(subtopic), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %> )
+                </span>
+                <% end %>
+
+                </li>
         <% end %>
         </ul>
     <% end %>
