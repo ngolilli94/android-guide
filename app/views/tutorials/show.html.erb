@@ -16,6 +16,12 @@
         </ul>
     <% end %>
 
+    <% if developer_signed_in? %>
+            <span>
+                (<a href="/tutorials/<%= @tutorial.id %>/edit"> Edit </a> |
+                <%= link_to 'Delete', tutorial_path(@tutorial), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %> )
+            </span>
+            <% end %>
     <%= link_to 'Back', :back %>
 </div>
 

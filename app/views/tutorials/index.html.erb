@@ -3,7 +3,9 @@
     
     <ul>
     <% @tutorials.order('title ASC').each do |tutorial| %>
-            <li> <a href="/tutorials/<%= tutorial.id %>"> <%= tutorial.title %> </a> </li>   
+            <li> 
+                <a href="/tutorials/<%= tutorial.id %>"> <%= tutorial.title %> </a> 
+            </li>
     <% end %>
     </ul>
     
