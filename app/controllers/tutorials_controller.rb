@@ -40,7 +40,7 @@ class TutorialsController < ApplicationController
         @tutorial = Tutorial.find(params[:id])
         @tutorial.update(tutorial_params)
 
-        redirect_to :controller => 'tutorials', :action => 'index'
+        redirect_to :controller => 'tutorials', :action => 'show'
     end
 
     def destroy
