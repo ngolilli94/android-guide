@@ -1,11 +1,7 @@
 <%= form_with model: @tutorial, local: true do |form| %>
     <div class="field"> 
         <label> Topic: </label>
-        <%= form.select(:topic_id) do %>
-            <% @topics.order('id ASC').each do |topic_select| %>
-              <%= content_tag(:option, topic_select.title, value: topic_select.id) %>
-            <% end %>
-        <% end %> 
+        <%= form.select :topic_id, options_for_select(@topics.collect {|t| [t.title, t.id]}, @tutorial.topic_id) %>
     </div>
     <div class="field"> 
         <label> Title: </label>
