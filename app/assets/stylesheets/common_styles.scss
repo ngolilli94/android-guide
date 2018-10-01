@@ -1,12 +1,14 @@
 body {
     background-color: #005b96;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 nav {
-    background-color: #DFDFDF;
+    background-image: linear-gradient(#F0F0F0, #666666);
     display: flex;
     justify-content: space-between;
+    height: 2em;
 }
 
 form {
