@@ -32,6 +32,13 @@
     }
 }
 
+.android-guide {
+    z-index: 5;
+    position: absolute;
+    top: 3%;
+    right: 0;
+}
+
 #individualTopicContainer {
     display: flex;
     justify-content: center;
@@ -59,5 +66,4 @@
             }
         }
     }
-    
 }
