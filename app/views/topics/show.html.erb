@@ -3,7 +3,15 @@
 
     <ul>
     <% @topic_tutorials.each do |tutorial| %>
-            <li> <a href="/tutorials/<%=tutorial.id %>"> <%= tutorial.title %> </a> </li>
+        
+            <li> 
+            <% if tutorial.icon.attached? %>
+                <span> <%= image_tag tutorial.icon %> </span>
+            <% end %>
+            <a href="/tutorials/<%=tutorial.id %>"> <%= tutorial.title %> 
+            </a> </li>
+        
+
     <% end %>
     </ul>
 
