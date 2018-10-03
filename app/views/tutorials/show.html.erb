@@ -1,9 +1,11 @@
 <div id="individualTutorialContainer">
     <h1> <%= @tutorial.title %> </h1>
-    <% if @tutorial.figures.blank? == false %>
-        <% @tutorial.figures.each do |image| %>
-            <%= image_tag image %> <br/>
-        <% end %>
+    <% if @tutorial.figures.attached? %>
+       <span> 
+       <% @tutorial.figures.each do |image| %>
+           <%= image_tag image %>
+        <% end %> 
+        </span>
     <% end %>
 
     <h3> <%= @tutorial.definition %> </h3>
