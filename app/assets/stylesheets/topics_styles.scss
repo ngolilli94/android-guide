@@ -3,8 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5%;
-    margin-top: 10%;
 
+    #topicsHeader {
+        width: 100%;
+        font-size: 5vw;
+        color: #054875;
+    }
     .individualTopic {
         background-color: #DFDFDF;
         box-shadow: 8px -8px #bfbfbd;
