@@ -6,8 +6,13 @@
 
     #topicsHeader {
         width: 100%;
-        font-size: 5vw;
-        color: #054875;
+
+        h1 {
+            font-size: 4vw;
+            color: #054875;  
+            text-align: center;
+        }
+        
     }
     .individualTopic {
         background-color: #DFDFDF;
