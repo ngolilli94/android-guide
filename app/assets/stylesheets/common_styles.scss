@@ -63,3 +63,47 @@ form {
     }
     
 }
+
+.android-guide {    
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    z-index: 5;
+
+    .speech-bubble { 
+        position: relative; 
+        background: #F7F9F9B3; 
+        border-radius: 50%;
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+        height: 100px;
+        width: 300px;
+        text-align: center;
+
+        p {
+            position: relative;
+            top: 37%;
+        }
+    } 
+
+    .speech-bubble:after { 
+        content: ''; 
+        position: absolute; 
+        bottom: 0; 
+        left: 50%; 
+        width: 0; 
+        height: 0; 
+        border: 20px solid transparent; 
+        border-top-color: #F7F9F9B3; 
+        border-bottom: 0; 
+        border-right: 0;
+        box-shadow: 4px 0 0 rgba(0, 0, 0, 0.4);
+        margin-left: -10.5px; 
+        margin-bottom: -20px;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+    }
+     
+}
