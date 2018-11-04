@@ -65,4 +65,3 @@ gem 'devise'
 
 #Github detected security issue fix
 gem "loofah", ">= 2.2.3"
-#gem "rubyzip", ">= 1.2.2"
